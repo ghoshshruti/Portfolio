@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 body{
@@ -9,14 +10,21 @@ body{
 }
 
 .navbar{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    padding: 0 100px !important;
+    padding: 0 10px !important;
+}
+.logo{
+    font-family:'cursive','Magneto';
+
 }
 
 .navbar, .logo h1{
+    
+    padding-left: 2vw;
     color: white;
     cursor: pointer;
 }
@@ -49,6 +57,7 @@ body{
 }
 
 .hero-box .txt-left{
+    /* position: absolute; */
     color: white;
     width: 393px;
     height: 337px;
@@ -119,11 +128,12 @@ body{
 
 .txt-left button:hover{
     background-color: rgb(255, 255, 255);
-    box-shadow: #e16c81c8 0px 54px 55px, rgba(204, 44, 111, 0.42) 0px -12px 30px, rgba(133, 14, 42, 0.685) 0px 4px 6px,  rgba(190, 69, 97, 0.17) 0px 12px 13px, rgba(2, 247, 185, -0.91) 0px -3px 5px;
+    box-shadow: #e16c81c8 0px 15px 20px, rgba(204, 44, 111, 0.42) 0px -12px 30px, rgba(133, 14, 42, 0.685) 0px 4px 6px,  rgba(190, 69, 97, 0.17) 0px 12px 13px, rgba(2, 247, 185, -0.91) 0px -3px 5px;
     cursor: pointer;
 }
 
 .hero-box .img-right{
+   
     width: 393px;
     height: 337px;
     display: flex;
@@ -142,3 +152,215 @@ body{
     cursor: pointer;
     box-shadow: rgba(0, 102, 255, 0.12) 0px -21px 139px, rgba(0, 255, 255, 0.12) 0px -12px 30px, rgba(0, 102, 255, 0.12) 0px 4px 6px, rgba(8, 231, 213, 0.17) 0px 31px 15px, rgba(2, 247, 185, -0.91) 0px -3px 18px;
 }
+.my-skills{
+    display: flex;
+    padding-left: 20px;
+} 
+.my-skills .container .row{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+
+.my-skills .mh-professional-skill{
+    padding-right: 60px;
+    color:white;
+    
+}
+.mh-skills .mh-professional-skill h3{
+    font-size: 30px;
+    line-height:40px;
+    text-align:center;
+    font-weight:400;
+    margin-bottom:60px;
+    font-family:'Poppins',sans-serif;
+}
+.mh-professional-skills{
+    padding-left: 20%;
+    color:white;
+}
+.mh-professional-skills h3{
+    font-size: 30px;
+    line-height:40px;
+    text-align:center;
+    font-weight:400;
+    margin-bottom:60px;
+    font-family:'Poppins',sans-serif;
+}
+h3{
+    padding-bottom: 10px;
+}
+
+.mh-professional-progress li{
+    display:inline-block;
+    margin: 0 auto;
+    float:none;
+    width:48%;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+.mh-progress{
+    margin-bottom:10px;
+    font:900 1.14285/1 Cinzerl, cursive;
+    color:white;
+}
+
+.mh-progress .progressbar-text{
+    color:inherit !important;
+    font-family:'Poppins',sans-serif;
+}
+
+.progress.progress-line{
+    height:20px;
+    margin-right: 60px;
+}
+
+.progress.progress-line .progress-text{
+    position:absolute;
+    top:50%;
+    left:100%;
+    width:60px;
+    transform:translateY(-35%);
+    text-align:center;
+    font-family:'Poppins',sans-serif ;
+}
+.mh-progress.mh-progress-circle{
+
+    display:inline-block;
+    width:100px;
+    height:100px;
+    
+}
+.mh-progress path:nth-child(1){
+    stroke:rgba(59, 25, 25, 0.7);
+}
+.mh-progress path:nth-child(2){
+    stroke:#b92b79 !important;
+}
+.candidatos{
+    position: relative;
+    margin-bottom: 15px;
+    font-family:'Poppins',sans-serif;
+}
+.candidatos .parcial{
+    display:inline-block;
+    width:100%;
+    vertical-align:middle;
+}
+.candidatos .parcial .info{
+    position: relative;
+    font-family:'Poppins',sans-serif;    
+}
+.candidatos .parcial .info .nome{
+    position:absolute;
+    top:0;
+    left:0;
+    font-size:15px;
+    font-weight: 600;
+    opacity:0.9;
+    font-family:'Poppins',sans-serif;
+}
+.candidatos .parcial .info .percentage-num{
+    position:absolute;
+    top:0;
+    right:0;
+    font-size:14px;
+    font-weight:normal;
+}
+.candidatos .parcial .progressBar{
+    position: relative;
+    width: 100%;
+    height: 7px;
+    margin: 30px 0 2px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.5);
+}
+.candidatos .parcial .percentagem{
+    position: absolute;
+    top: 0;
+    left:0;
+    height:7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #b92f68;
+    -webkit-transition:3s all;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name: animationProgress;
+    font-family:'Poppins',sans-serif;
+}
+
+
+
+@keyframes animationProgress{
+   from{
+    width:0;
+    
+   } 
+}
+
+
+
+
+.edu{
+
+    width:100%;
+    
+    padding:35px 10%;
+    /* background-color: #fafafa; */
+    
+    
+}
+main.row{
+    display: grid;
+    grid-template-columns:2fr 1fr ;
+    grid-column-gap:20px;
+}
+
+.col header.title{
+    font-family:Helvetica;
+    color:#0077b5;
+    padding:0px 20px 30px;
+}
+
+
+.col .content{
+    color: #fafafa;
+    padding:0px 30px;
+    border-left: 2px solid #d24084;
+    
+    
+}
+
+.col .content .box{
+    position:relative;
+    padding:10px;
+    border:1px solid #eaeaea;
+    border-radius: 5px;
+    /* background-color: #d24084; */
+    cursor:pointer;
+    transition:all 0.4s;
+    margin-bottom:20px;  
+
+}
+.col .content .box h3{
+color: #333;
+}
+.col .content .box:hover{
+    box-shadow:0px 3px 12px 0px #bc2a8d;
+    border:1px solid transparent;
+}
+
+.col .content .box::before{
+    content: '';
+    position: absolute;
+    width:16px;
+    height:16px;
+    border-radius:50%;
+    right:calc(100% + 22px);
+    top:0;
+    background-color: #0077b5;
+    border:2px solid white;
+}
+
